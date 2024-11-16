@@ -43,7 +43,7 @@ export const register = TryCatch(async (req, res) => {
   await sendMail(email, "E learning", data);
 
   res.status(200).json({
-    message: "Otp send to your mail",
+    message: "OTP has been sent to your mail",
     activationToken,
   });
 });
